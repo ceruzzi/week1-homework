@@ -21,14 +21,15 @@ data = JSON.parse(json_data)
 
 # 1. TO DO:
 # Replace the following 0 with an expression that will retrieve the total travel time
-total_time = 0
+total_time = data.flatten[1][0].flatten[5][0].flatten[3]["text"]
 
 # Output the total drive time to the screen
 puts "Total travel time driving: #{total_time}"
 
 # 2. TO DO:
 # Replace the following 0 with an expression that will retrieve the total distance
-total_distance = 0
+total_distance = data.flatten[1][0].flatten[5][0].flatten[1]["text"]
 
 # Output the total distance to the screen
 puts "Total distance traveled: #{total_distance}"
+
